@@ -109,9 +109,11 @@ h2 {
     justify-content: center;
     margin-top: 5%;
     margin-left: 5%;
+    font-size: 20px;
+    font-family: monospace;
 }
 
-a {
+#back {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: black;
     background-color: rgb(95, 161, 112);

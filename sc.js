@@ -8,15 +8,15 @@ function play(user) {
     let rs = "";
 
     if (user === cp){
-        rs = "DRAW!";
+        rs = "[DRAW!]";
     } else if (
         (user === "⚫" && cp === "✂️") || 
         (user === "📄" && cp === "⚫") ||
         (user === "✂️" && cp === "📄")
     ) {
-        rs = "You win! 🎉"
+        rs = "[You win! 🎉]"
     } else {
-        rs = "You lost! 😔"
+        rs = "[You lost! 😔]"
     }
 
     document.getElementById('result').innerText =
