@@ -8,8 +8,21 @@
     <link rel="stylesheet" href="st.css">
 </head>
 <body>
-    <div>
-        <h2>Even or Odd</h2>
-    </div>
+        <h2 id="tteo" class="po">Even or Odd</h2>
+        <div class="center">
+            <p id="pch">Choice an option</p>
+            <select name="choice" id="choice" required>
+                <option value="default">Options</option>
+                <option value="even">Even</option>
+                <option value="odd">Odd</option>
+            </select>
+        </div>
+        <div class="center">
+            <input type="number" id="num" placeholder="Your number" min="0" max="100" autocomplete="off">
+            <button onclick="Play(num)">submit</button>
+        </div>
+        <p id="result"></p>
+
+        <a id="back2" href="menu.html">Back</a>
 </body>
 </html>

@@ -23,5 +23,31 @@ function play(user) {
     ` Your choice: ${user}
       Computer coice: ${cp}
       ${rs}`;
+}
+// Even or Odd
+function Play() {
+    
+    const eo = document.getElementById('choice').value;
+    const nus = Number((document.getElementById('num').value));
 
+    const pc = Math.floor(Math.random() * 100);
+
+    const sum = nus + pc;
+
+    const r = sum % 2 === 0 ? "even" : "odd";
+
+    let txt = "";
+
+    if (r === eo) {
+        txt = "[You win! 🎉]";
+    } else {
+        txt = "[You lost! 😔]";
+    }
+
+    document.getElementById('result').innerText = 
+        `You: ${nus}
+        Computer: ${pc}
+        Sum: ${sum}
+        ${txt}`
+        
 }
