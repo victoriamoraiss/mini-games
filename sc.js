@@ -1,6 +1,7 @@
 // RPC 
 
 function play(user) {
+    
     const op = ["⚫", "📄", "✂️"];
 
     const cp = op[Math.floor(Math.random() * 3)];
@@ -19,16 +20,19 @@ function play(user) {
         rs = "[You lost! 😔]"
     }
 
+    result.style.display = "flex";
     document.getElementById('result').innerText =
     ` Your choice: ${user}
       Computer coice: ${cp}
       ${rs}`;
+
 }
 // Even or Odd
+
 function Play() {
     
     const eo = document.getElementById('choice').value;
-    const nus = Number((document.getElementById('num').value));
+    const nus = Number(document.getElementById('num').value);
 
     const pc = Math.floor(Math.random() * 100);
 
@@ -48,6 +52,31 @@ function Play() {
         `You: ${nus}
         Computer: ${pc}
         Sum: ${sum}
-        ${txt}`
+        ${txt}`;
         
+}
+
+// Guess the number
+function playG() {
+
+    const num = Number(document.getElementById('n').value);
+
+    const nr = Math.floor(Math.random() * 10);
+
+    let rst = "";
+
+    if (num === nr)
+    {
+        rst = "[You win! 🎉]";
+    } else 
+    {
+        rst = "[You lost! 😔]";
+    }
+
+    result.style.display = "flex";
+    document.getElementById('result').innerText =
+    `You: ${num}
+    Number: ${nr}
+    ${rst}`;
+    
 }
