@@ -6,8 +6,20 @@
     <title>Guess the Number</title>
     <script src="sc.js"></script>
     <link rel="stylesheet" href="st.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+25&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+    <h2 id="tg" class="jersey-25-regular">Guess the Number</h2>
+    <p id="pch">Try to guess the number (0 to 10)</p>
+    <div class="center">
+        <input type="number" id="n" placeholder="Number" autocomplete="off" min="0" max="10">
+        <button onclick="playG()">submit</button>
+    </div>
+
+    <p id="result"></p>
+
+    <a id="back3" href="menu.html">Back</a>
 </body>
 </html>
